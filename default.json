@@ -1,0 +1,35 @@
+{
+  "BrainParcellation":{
+    "region_names": ["FRP","MOs","ACAd","ACAv","PL","ILA","ORBl","ORBm","ORBvl",
+                             "AId","AIv","AIp","GU","VISC",
+                             "SSs","SSp-bfd","SSp-tr","SSp-ll","SSp-ul","SSp-un","SSp-n","SSp-m","MOp",
+                             "VISal","VISl","VISp","VISpl","VISli","VISpor","VISrl",
+                             "VISa","VISam","VISpm","RSPagl","RSPd","RSPv",
+                             "AUDd","AUDp","AUDpo","AUDv","TEa","PERI","ECT"],
+    "module_names": ["prefrontal", "anterolateral", "somatomotor", "visual", "medial", "temporal"],
+    "projection_classes": ["23", "4", "5it", "5pt", "6"],
+    "module_idx": {"prefrontal": [0, 9], "anterolateral": [9, 14], "somatomotor": [14, 23],
+                           "visual": [23, 30], "medial": [30, 36], "temporal": [36, 43]},
+    "class_to_layer": {"23": ["l2", "l3"], "4": ["l4"], "5it": ["l5"],
+                              "5pt": ["l5"], "6": ["l6"]},
+    "projection_class_fltrs": {"23": {"synapse_type": "EXC"}, "4": {"synapse_type": "EXC"},
+                               "5it": {"synapse_type": "EXC", "proj_type": "intratelencephalic"},
+                               "5pt": {"synapse_type": "EXC", "proj_type": "pyramidal tract"},
+                               "6": {"synapse_type": "EXC"}}
+  },
+  "Colors": {
+      "23": "rgba(0, 250, 0, 1.0)",
+      "4": "rgba(128, 128, 0, 1.0)", 
+      "5it": "rgba(255, 50, 0, 1.0)", 
+      "5pt": "rgba(200, 0, 120, 1.0)",
+      "6": "rgba(45, 45, 250, 1.0)",
+      "prefrontal": "rgba(220, 105, 20, 1.0)",
+      "anterolateral": "rgba(75, 235, 25, 1.0)",
+      "somatomotor": "rgba(50, 75, 235, 1.0)",
+      "visual": "rgba(140, 0, 200, 1.0)",
+      "medial": "rgba(25, 140, 200, 1.0)",
+      "temporal": "rgba(105, 45, 200, 1.0)",
+      "ALL": "rgba(55, 55, 55, 1.0)",
+      "_default": "rgba(150, 150, 150, 1.0)"
+  }
+}
