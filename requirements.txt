@@ -3,3 +3,5 @@ numpy
 PyYAML
 jsonschema
 zipp
+ipywidgets
+plotly
