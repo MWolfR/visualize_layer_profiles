@@ -1,5 +1,5 @@
 requests
 numpy
 PyYAML
-json
+jsonschema
 zipfile
