@@ -2,4 +2,4 @@ requests
 numpy
 PyYAML
 jsonschema
-zipfile
+zipp
