@@ -8,8 +8,13 @@ class ColorMaker(object):
         self.cols = cols
        
     def __getitem__(self, a_str):
-        if a_str in self.mapper.region_names:
+        splt = a_str.split()
+        if splt[0] in self.mapper.region_names:
             a_str = self.mapper.region2module(a_str)
+        elif splt[0] == "Via":
+            a_str = splt[1]
+        elif "layer" in splt:
+            a_str = splt[-1]
         return self.cols.get(a_str, self.cols["_default"])
     
     def color_labels(self, lst_str):

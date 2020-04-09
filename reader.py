@@ -47,7 +47,8 @@ def extract_projections(projections, layer_profiles):
             for tgt_proj in proj['targets']:
                 prof = layer_profiles.profile_for_projection(tgt_proj)
                 tgt_region = tgt_proj['population'].replace("_ALL_LAYERS", "")
-                output.setdefault(tgt_region, []).append((curr_src, prof))
+                tgt_hemi = tgt_proj['hemisphere']
+                output.setdefault(tgt_region, []).append((curr_src, tgt_hemi, prof))
 
     return output
 
