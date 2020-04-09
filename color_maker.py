@@ -10,7 +10,7 @@ class ColorMaker(object):
     def __getitem__(self, a_str):
         splt = a_str.split()
         if splt[0] in self.mapper.region_names:
-            a_str = self.mapper.region2module(a_str)
+            a_str = self.mapper.region2module(splt[0])
         elif splt[0] == "Via":
             a_str = splt[1]
         elif "layer" in splt:
